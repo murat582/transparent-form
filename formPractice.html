@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Form Practice</title>
+        <style>
+            *{box-sizing: border-box; margin: 0%; padding: 0%;}
+            .container{display: flex; align-items: center; justify-content: center; background-image: url(./vlack\ tea.jpg); 
+                height: 100vh; width: 100%; background-size: cover; display: flex; flex-direction: column; }
+            #form{border: 3px solid #666; width: 19%; height: auto; padding: 20px; margin-top: 5rem; background: hsl(, 100%, 20%); border-radius: 5px;}
+            form h2{color: #fff; text-align: center; padding: 20px;}
+            form label{display: flex; margin: 5px 10px; color: #fff;}
+            form input, form textarea{width: 100%; line-height: 1.5; padding: 5px; margin-bottom: 10px; border: 1px solid #999; 
+                border-radius: 5px; background: transparent; color: white;}
+            form input:focus, form textarea:focus{outline: none; padding: 6px; color: red; line-height: 2; font-weight: 600;}
+            .btn{background: #088178; color: #fff; font-size: 14px; margin: 10px 0px;} 
+            .btn:hover{background: orange; transition: all 0.5s ease;}  
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="form">
+                <form action="#" method="post">
+                    <h2>Fill This Form</h2>
+                    
+                    <label>Username:</label>
+                    <input type="text" id="username" placeholder="Your name" autofocus required><br>
+                       
+                    <label>Email:</label></td>
+                    <input type="email" id="email" placeholder="Exapmle@..." required><br>
+                    <label>Password:</label>
+                    <input type="password" id="pass" required><br>
+                    <label>Messages:</label>
+                    <textarea id="" cols="30" rows="10" required></textarea><br>
+                    <input type="submit" value="Gonder" class="btn">
+                </form>
+            </div>
+        </div>  
+    </body>
+</html>
